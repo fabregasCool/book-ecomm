@@ -1,0 +1,42 @@
+.offCanvas {
+  cursor: pointer;
+  margin-left: 70px;
+  margin-top: 20px;
+}
+.cart {
+  display: flex;
+}
+
+.elem_panier {
+  font-size: 24px;
+  font-weight: 900;
+  color: red;
+  margin-right: 5px;
+  font-family: cursive;
+}
+
+/* Nom du logo ShoopBook */
+.logo {
+  font-family: cursive;
+  font-size: 50px;
+  font-weight: bold;
+}
+strong {
+  color: red;
+}
+
+.admin_menu {
+  margin-left: 100px;
+  margin-top: 25px;
+  font-size: 20px;
+}
+
+.user_menu {
+  margin-left: 650px;
+  margin-top: 25px;
+}
+
+.img_cart_menu {
+  height: 110px;
+  width: 70px;
+}

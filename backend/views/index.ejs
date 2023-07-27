@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Debut Style -->
+    <style>
+      input[type='password'],
+      select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+
+      input[type='submit'] {
+        width: 100%;
+        background-color: #4caf50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      input[type='submit']:hover {
+        background-color: #45a049;
+      }
+
+      div {
+        margin-top: 50px;
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+        margin: auto;
+        width: 800px;
+      }
+      h1 {
+        text-align: center;
+        color: red;
+      }
+    </style>
+    <!-- Fin Style -->
+    <!-- Il avait ce script chez lui, mais il n'est pas nécessaire chez moi -->
+    <!-- <script>
+      var status = '<%- JSON.stringify(status)%>';
+      alert('le statut est:' + status);
+        if (JSON.parse(status) == 'verified') {
+          if (confirm('Do you to login?')) {
+            window.location.href = 'http://localhost:3000/signin';
+          }
+        }
+    </script> -->
+  </head>
+  <body>
+    <h1>Your Email: <%= email%></h1>
+    <div>
+      <form action="" method="post">
+        <label for="password">Mot de Passe</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Password"
+        />
+
+        <label for="confirm_password">Confirm Mot de Passe</label>
+        <input
+          type="password"
+          name="confirm_password"
+          id="confirm_password"
+          placeholder="Confirm-Password"
+        />
+
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>
